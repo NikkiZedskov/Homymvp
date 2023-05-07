@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/waitlist.js", "components/postdetail.jsx", "components/form.jsx", "components/header.jsx", "components/footer.jsx", "components/categories.jsx", "components/banner.jsx", "components/layout.jsx", "components/postcard.jsx", "components/postwidget.jsx", "components/resourceHeader.jsx", "components/waitlistModal.jsx", "pages/_app.tsx", "pages/index.tsx", "pages/jobs.jsx", "pages/waitlist.jsx"],
+  "exclude": ["node_modules"]
+}

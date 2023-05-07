@@ -1,0 +1,57 @@
+.header {
+    position: sticky;
+    top: 0;
+    position:-webkit-sticky;
+    background: white; 
+    z-index: 1000;
+}
+
+.resourceHeader1::after {
+    margin-inline: auto;
+    height: 1px;
+    background: hsla(215, 12%, 80%, 1);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.resourceHeader2::after {
+    width: 100vw;
+    margin-inline: auto;
+    height: 1px;
+    background: hsla(215, 12%, 80%, 1);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    padding-inline: 0;
+    left: 0;
+}
+
+.resourceHeader1 {
+    padding-block: 16px 16px;
+    display: flex;
+    position: relative;
+}
+
+.resourceHeader1 span,
+.resourceHeader2 {
+    font-size: 23px;
+    font-family: inter;
+    font-weight: 500;
+}
+
+.resourceHeader2 {
+    padding-block: 16px 16px;
+    display: flex;
+    position: static;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.not_transparent {
+    background: white;
+}

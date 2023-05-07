@@ -1,0 +1,141 @@
+.modal {
+    width: 591px;
+    background: white;
+    border-radius: 20px;
+    padding-block: 85px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.close_modal svg {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 38px;
+    height: auto;
+    color: hsl(215, 12%, 38%);
+    transition: color ease 150ms;
+}
+
+@media (min-width: 45em) {
+    .close_modal svg:hover {
+        color: hsl(215, 60%, 8%)
+    }
+}
+
+.modal h2 {
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    line-height: 40px;
+    color:hsl(215, 60%, 8%);
+}
+
+.first_p {
+    margin-top: 1.2rem;
+}
+
+.modal p {
+    font-family: var(--ff-secondary);
+    font-size: 20px;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color:hsl(215, 60%, 8%);
+}
+
+.share {
+    display: flex;
+    gap: 18px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.share_p {
+    margin-block: 42px 28px;
+}
+
+.share button {
+    background: hsl(215, 100%, 52%);
+    color: white;
+    font-family: var(--ff-primary);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    border-radius: 12px;
+    transition: ease-out 150ms;
+    letter-spacing: 0.01em;
+    padding: 16px 25px;
+}
+
+.share button:hover {
+    transform: translateY(-3px);
+    background: hsl(215, 100%, 48%);
+}
+
+.share button:active {
+    transform: scale(0.98);
+}
+
+.text {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: hsla(215, 10%, 35%, 1);
+    background: hsl(215, 60%, 97%);
+    border-radius: 12px;
+    padding: 13px 35px;
+    font-family: var(--ff-secondary);
+    font-weight: 350;
+}
+
+@media (max-width: 45em) {
+    .modal {
+        width: 90%;
+        padding: 65px 25px;
+    }
+    .modal p {
+        font-size: 17px;
+        color: hsla(215, 10%, 35%, 1);
+        line-height: 24px;
+    }
+    .share_p {
+        margin-top: 25px;
+    }
+    .share {
+        gap: 12px;
+        width: 100%;
+    }
+    .share button {
+        letter-spacing: 0.01em;
+        padding: 13px 18px;
+    }
+    .share button:hover {
+        transform: translateY(0);
+    }
+    .text {
+        font-size: 15px;
+        padding: 13px 20px;
+    }
+}
+
+@media (max-width: 335px) {
+    .share {
+        flex-direction: column;
+    }
+}

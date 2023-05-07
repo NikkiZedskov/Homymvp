@@ -1,0 +1,200 @@
+/* See globals.css for this code!!! */
+.header {
+    position: sticky;
+    top: 0;
+    position:-webkit-sticky;
+    display: flex;
+    /* From https://css.glass */
+}
+
+.whale {
+    position: static;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 18px 12px;
+    font-family: inter;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    gap: 35px;
+    color: hsl(215, 12%, 38%);
+    margin-left: 55px;
+    align-items: center;
+}
+.navigation li {
+    transition: ease 150ms;
+}
+
+.navigation li:hover {
+    color: hsl(215, 40%, 12%);
+}
+
+.waitlist-button {
+    margin-left: 55px;
+    width: 192px;
+    height: 48px;
+    border-radius: 12px;
+    color: hsl(215, 30%, 25%);
+    border: 1px solid #243042;
+    transition: ease-out 150ms;
+    background: white;
+}
+
+@media (min-width: 40em) {
+    .waitlist-button:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.waitlist-button:active {
+    transform: scale(0.985);
+}
+
+.toggle {
+    display: block;
+}
+
+@media (min-width: 850px) {
+    .toggle {
+        display: none;
+    }
+    .social1,
+    .social2 {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+    .toggle {
+        top: 50%;
+        right: 25px;
+        transform: translateX(9px);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .responsive {
+        position: absolute;
+        display: block;
+        background: white;
+        z-index: 1100;
+        top: 100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: calc(100vh - 50px);
+        transition: height ease 500ms;
+        overflow: hidden;
+    }
+
+    .nav {
+        transition: 500ms;
+        padding-inline: 25px;
+    }
+    
+    .navigation {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        transition: ease 350ms;
+        margin-inline: auto;
+    }
+
+    .navigation li {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .closed {
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        background: white;
+        z-index: 1100;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 0;
+        display: hidden;
+    }
+
+    .closed .navigation,
+    .closed .waitlist-button {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    .waitlist-button {
+        margin-inline: auto;
+        margin-top: 35px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: ease 400ms;
+    }
+
+    .social1 {
+        position: absolute;
+        padding-block: 25px 45px;
+        border-top: 1px solid hsl(215, 12%, 75%);
+        display: flex;
+        right: 25px;
+        left: 25px;
+        top: calc(100vh - 250px);
+    }
+
+    .social2 {
+        position: absolute;
+        padding-block: 25px 45px;
+        border-top: 1px solid hsl(215, 12%, 75%);
+        display: flex;
+        right: 25px;
+        left: 25px;
+        top: calc(100vh - 175px);
+    }
+
+    .social1 svg,
+    .social2 svg {
+        width: 48px;
+        height: auto;
+        padding: 8px;
+        background: hsl(215, 100%, 52%);
+        transition: ease 150ms;
+        border-radius: 100%;
+        color: white;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 850px) {
+    .navigation li {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .navigation {
+        color: hsl(215, 30%, 25%)
+    }
+
+    .waitlist-button {
+        width: 232px;
+        height: 56px;
+        font-size: 20px;
+    }
+}

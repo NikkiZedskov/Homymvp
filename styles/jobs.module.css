@@ -1,0 +1,84 @@
+@import url("https://use.typekit.net/viv2hsw.css");
+
+.join-the-journey {
+    max-width: 612px;
+    margin-inline: auto;
+    padding-block: 118px 225px;
+}
+
+.join-the-journey h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.join-the-journey h3 {
+    margin-top: 78px;
+    line-height: 40px;
+    font-size: 32px;
+    font-family: lato;
+    font-weight: semi-bold
+}
+
+.join-the-journey p {
+    line-height: 2rem !important;
+}
+
+.join-the-journey ul,
+.join-the-journey p {
+    font-size: 19px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: rgba(18, 29, 43, 0.8);
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-top: 24px;
+    font-family: var(--ff-secondary);
+}
+
+.sm {
+    margin-top: 24px;
+}
+
+.bm {
+    margin-top: 48px;
+}
+
+.about {
+    margin-top: 25px;
+}
+
+.link {
+    color: hsl(215, 100%, 50%);
+}
+
+/* Tablet */
+@media (max-width: 60em) {
+    .join-the-journey {
+        padding-block: 115px 130px;
+    }
+
+    .join-the-journey h3 {
+        margin-top: 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 420px) {
+    .join-the-journey {
+        padding-block: 80px 130px;
+    }
+
+    .join-the-journey h1 {
+        line-height: 48px;
+    }
+
+    .join-the-journey h3 {
+        font-size: 25px;
+        margin-top: 70px;
+    }
+
+    .join-the-journey p,
+    .join-the-journey ul {
+        font-size: 17px;
+    }
+}
